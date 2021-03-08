@@ -1,0 +1,17 @@
+node_modules
+yarn.lock
+
+.FIGMA_TOKEN
+
+dist/
+preview/index.html
+
+*.log
+*.swp
+
+# editors
+.idea/
+.vscode/
+
+# os
+.DS_Store
