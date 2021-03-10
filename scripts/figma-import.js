@@ -4,12 +4,15 @@ const fs = require('fs-extra');
 const path = require('path');
 const fetch = require('node-fetch');
 const prompts = require('prompts');
+const slugify = require('@sindresorhus/slugify')
+
+
 
 // The Figma project where we can find our icons
 const FIGMA_PROJECT_ID = '1qkEGDQWaftkOL7C360qVD';
 
 // The id the of the canvas where we can find the icons
-const CANVAS_ID = '31:2';
+// const CANVAS_ID = '31:2';
 
 // Where we store the Figma token
 const FIGMA_TOKEN_PATH = path.join(__dirname, '../', '.FIGMA_TOKEN');
@@ -49,22 +52,22 @@ const FIGMA_TOKEN_PATH = path.join(__dirname, '../', '.FIGMA_TOKEN');
 
   spinner.start('Loading Figma project');
 
-  let project;
+  let components;
   try {
-    project = await fetchProject(figmaToken);
-    spinner.succeed(`Loaded Figma project - last modified ${project.lastModified}`);
+    components = await fetchComponents(figmaToken);
+    spinner.succeed(`Loaded Figma components`);
   } catch (e) {
-    spinner.fail('Unable to load Figma project: ' + e.message);
+    spinner.fail('Unable to load Figma components: ' + e.message);
     return;
   }
 
   let icons;
   try {
-    spinner.start('Parsing Figma project');
-    icons = filterIcons(project);
-    spinner.succeed();
+    spinner.start('Parsing Figma components');
+    icons = processComponents(components);
+    spinner.succeed(`Parsed ${icons.length} components into icons`);
   } catch (e) {
-    spinner.fail('Unable to parse icons from Figma project: ' + e.message);
+    spinner.fail('Unable to parse icons from Figma components: ' + e.message);
     return;
   }
 
@@ -100,9 +103,9 @@ const FIGMA_TOKEN_PATH = path.join(__dirname, '../', '.FIGMA_TOKEN');
 /**
  * Get the Figma project
  */
-async function fetchProject(figmaToken) {
+async function fetchComponents(figmaToken) {
   const res = await fetch(
-    `https://api.figma.com/v1/files/${FIGMA_PROJECT_ID}`,
+    `https://api.figma.com/v1/files/${FIGMA_PROJECT_ID}/components`,
     {
       headers: {
         'X-FIGMA-TOKEN': figmaToken,
@@ -116,7 +119,7 @@ async function fetchProject(figmaToken) {
     throw new Error(json.err);
   }
 
-  return json;
+  return json.meta.components;
 }
 
 /**
@@ -127,7 +130,7 @@ async function fetchProject(figmaToken) {
 async function fetchImageUrls(icons, figmaToken) {
   const url = new URL(`https://api.figma.com/v1/images/${FIGMA_PROJECT_ID}/`);
 
-  url.searchParams.set('ids', icons.map((i) => i.id).join(','));
+  url.searchParams.set('ids', icons.map(i => i.id).join(','));
   url.searchParams.set('format', 'svg');
 
   const res = await fetch(url, {
@@ -165,29 +168,35 @@ async function downloadSvgIcon({ iconName, url }) {
   return fs.outputFile(path, svg, 'utf8');
 }
 
+const hasNumbers = /\d/
+const isCompound = /Size/
+const correctSingleFormat = /\d\d\//
+const poorlyNamedIcons = comp => {
+  if (comp.containing_frame?.name?.match(hasNumbers)) {
+    console.log("DISCARDING", comp.containing_frame.name)
+    return false
+  }
+  if (!comp.name.match(isCompound)) {
+    if (!comp.name.match(correctSingleFormat) || comp.name.split('/')[1].match(hasNumbers)) {
+      console.log("DISCARDING", comp.name)
+      return false
+    }
+  }
+  return true
+}
+const parseGroupName = comp => comp.name.replace('Size=', '') + '-' + slugify(comp.containing_frame.name)
+const parseSingleName = comp => slugify(comp.name)
 /**
  * Get the icons in the Figma Project
  *
  * @returns Array<{id: string, name: string}>
  */
-function filterIcons(project) {
-  console.log() // Log a newline so the first "skipped" log-line is on its own line
-  const canvas = project.document.children.find((c) => c.id === CANVAS_ID);
-  const iconNodes = canvas.children.filter(isIconNode);
-
-  const icons = iconNodes.map((i) => ({ name: i.name, id: i.id }));
-
-  return icons;
-}
-
-/**
- * Check if the node is an icon
- */
-function isIconNode(node) {
-  const name = node.name;
-  const isNode = name.startsWith('16x16-') || name.startsWith('24x24-') || name.startsWith('32x32-')
-  if (!isNode) console.log("Skipping:", name)
-  return isNode
+function processComponents(components) {
+  // FIXME need to filter here to start
+  return components.filter(poorlyNamedIcons).map(c => ({
+    id: c.node_id,
+    name: c.containing_frame.name ? parseGroupName(c) : parseSingleName(c)
+  }))
 }
 
 /**
