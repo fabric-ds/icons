@@ -5,6 +5,7 @@ import { JSDOM } from 'jsdom'
 
 const icons = []
 const pathRegex = /(?<size>\d+)\/(?<name>.*).svg/
+const capitalize = str => str.charAt(0).toUpperCase() + str.slice(1)
 
 const files = glob.sync('./dist/**/*.svg')
 files.forEach(f => {
@@ -28,5 +29,6 @@ files.forEach(f => {
     console.error(err)
   }
 })
-const indexFile = icons.map(({ name, size, filename }) => `export { default as ${camelcase('Icon-' + name)}${size} } from './${filename}'`).join('\n')
+
+const indexFile = icons.map(({ name, size, filename }) => `export { default as ${capitalize(camelcase('icon-' + name))}${size} } from './${filename}'`).join('\n')
 writeFileSync('./vue/index.js', indexFile, 'utf-8')
