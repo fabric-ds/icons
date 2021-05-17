@@ -2,7 +2,7 @@
 
 The icon set for Fabric, imported from the [Figma project](https://www.figma.com/file/pY4zC5fnUv7CPjwSrJV9nT/).
 
-**Note that the icons in this repository should never be used directly, as they aren't optimized.**
+**Note that the icons in the "raw" folder in this repository should never be used directly, as they aren't optimized.**
 
 ## Updating the icons
 
