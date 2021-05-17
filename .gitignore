@@ -4,6 +4,7 @@ yarn.lock
 .FIGMA_TOKEN
 
 dist/
+vue/
 preview/index.html
 
 *.log
