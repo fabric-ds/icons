@@ -1,6 +1,6 @@
 {
   "name": "@finn-no/fabric-icons",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Fabric's icon set",
   "main": "index.js",
   "files": [
