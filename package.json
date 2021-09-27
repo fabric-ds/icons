@@ -9,7 +9,8 @@
   ],
   "exports": {
     ".": "./index.js",
-    "./vue": "./vue/index.js"
+    "./vue": "./vue/index.js",
+    "./package.json": "./package.json"
   },
   "scripts": {
     "vue": "rimraf vue && npm run build:vue",
