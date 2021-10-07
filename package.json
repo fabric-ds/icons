@@ -1,6 +1,6 @@
 {
   "name": "@fabric-ds/icons",
-  "version": "0.3.9",
+  "version": "0.3.10",
   "description": "Fabric's icon set",
   "main": "index.js",
   "files": [
