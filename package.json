@@ -15,11 +15,14 @@
   "scripts": {
     "vue": "rimraf vue && npm run build:vue",
     "prepublishOnly": "rimraf dist && npm run build && npm run vue",
+    "import": "node ./scripts/figma-import.js",
     "build": "node ./scripts/build.js",
     "build:vue": "mkdir vue && node ./generateVue.mjs",
+    "render": "node preview/render.js",
     "start": "npm run build && node preview/render.js && open ./preview/index.html",
     "version": "npm publish",
-    "postversion": "git push --follow-tags"
+    "postversion": "git push --follow-tags",
+    "update-lib": "npm run import && npm run build && npm run render && cp ./preview/index.html ./docs/index.html"
   },
   "license": "MIT",
   "devDependencies": {
