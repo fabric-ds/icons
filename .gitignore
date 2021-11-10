@@ -5,6 +5,7 @@ yarn.lock
 
 dist/
 vue/
+react/
 preview/index.html
 
 *.log
