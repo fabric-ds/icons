@@ -1,7 +1,7 @@
 {
   "name": "@fabric-ds/icons",
   "type": "module",
-  "version": "0.3.12",
+  "version": "0.3.13",
   "description": "Fabric's icon set",
   "main": "index.js",
   "files": [
@@ -21,8 +21,8 @@
     "prepublishOnly": "rimraf dist && npm run build && npm run vue && npm run react",
     "import": "node ./scripts/figma-import.js",
     "build": "node ./scripts/build.js",
-    "build:vue": "mkdir vue && node ./generateVue.mjs",
-    "build:react": "mkdir react && node ./generateReact.mjs",
+    "build:vue": "mkdir vue && node ./generateVue.js",
+    "build:react": "mkdir react && node ./generateReact.js",
     "render": "node preview/render.js",
     "start": "npm run build && node preview/render.js && open ./preview/index.html",
     "version": "npm publish",
