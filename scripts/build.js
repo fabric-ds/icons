@@ -1,14 +1,16 @@
 #!/usr/bin/env node
 
-const SVGO = require('svgo');
-const glob = require('glob');
-const chalk = require('chalk');
-const path = require('path');
-const fs = require('fs-extra');
-const { nanoid } = require('nanoid');
+import SVGO from "svgo";
+import glob from "glob";
+import chalk from "chalk";
+import path from "path";
+import fs from "fs-extra";
+import { nanoid } from "nanoid";
 
-const SRC_DIR = path.join(__dirname, '../raw');
-const DIST_DIR = path.join(__dirname, '../dist');
+import { __dirname } from "../index.js";
+
+const SRC_DIR = path.join(__dirname, "raw");
+const DIST_DIR = path.join(__dirname, "dist");
 
 const svgo = () =>
   new SVGO({
@@ -27,7 +29,7 @@ const svgo = () =>
       {
         // add unique prefixes to the ids
         prefixIds: {
-          delim: '',
+          delim: "",
           prefix: nanoid(5),
         },
       },
@@ -37,23 +39,27 @@ const svgo = () =>
 const files = glob.sync(`${SRC_DIR}/**/*.svg`);
 
 files.forEach(async (filePath) => {
-  const rawData = await fs.readFile(filePath, 'utf-8');
+  try {
+    const rawData = await fs.readFile(filePath, "utf-8");
 
-  const prevFileSize = Buffer.byteLength(rawData, 'utf8');
+    const prevFileSize = Buffer.byteLength(rawData, "utf8");
 
-  const { data: optimizedData } = await svgo().optimize(rawData);
+    const { data: optimizedData } = await svgo().optimize(rawData);
 
-  const optimizedFileSize = Buffer.byteLength(optimizedData, 'utf8');
+    const optimizedFileSize = Buffer.byteLength(optimizedData, "utf8");
 
-  const fileName = path.basename(filePath);
-  const iconSize = getIconSize(filePath);
+    const fileName = path.basename(filePath);
+    const iconSize = getIconSize(filePath);
 
-  console.log(`\n${iconSize}/${fileName}:`);
-  printProfitInfo(prevFileSize, optimizedFileSize);
+    console.log(`\n${iconSize}/${fileName}:`);
+    printProfitInfo(prevFileSize, optimizedFileSize);
 
-  const outputPath = path.join(DIST_DIR, iconSize, fileName);
+    const outputPath = path.join(DIST_DIR, iconSize, fileName);
 
-  fs.outputFile(outputPath, optimizedData, 'utf8');
+    fs.outputFile(outputPath, optimizedData, "utf8");
+  } catch (err) {
+    console.error(err);
+  }
 });
 
 /**
@@ -64,17 +70,17 @@ function printProfitInfo(inBytes, outBytes) {
 
   console.log(
     Math.round((inBytes / 1024) * 1000) / 1000 +
-      ' KiB' +
-      (profitPercents < 0 ? ' + ' : ' - ') +
-      chalk.green(Math.abs(Math.round(profitPercents * 10) / 10) + '%') +
-      ' = ' +
+      " KiB" +
+      (profitPercents < 0 ? " + " : " - ") +
+      chalk.green(Math.abs(Math.round(profitPercents * 10) / 10) + "%") +
+      " = " +
       Math.round((outBytes / 1024) * 1000) / 1000 +
-      ' KiB'
+      " KiB"
   );
 }
 
 function getIconSize(filePath) {
   const dirname = path.dirname(filePath);
-  const dirs = dirname.split('/');
+  const dirs = dirname.split("/");
   return dirs[dirs.length - 1];
 }

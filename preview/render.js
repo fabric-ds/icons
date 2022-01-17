@@ -1,12 +1,13 @@
-const fs = require('fs-extra');
-const glob = require('glob');
-const path = require('path');
-const nunjucks = require('nunjucks');
+import fs from "fs-extra";
+import glob from "glob";
+import path from "path";
+import nunjucks from "nunjucks";
+import { __dirname } from "../index.js";
 
 const svgPaths = glob.sync(`./dist/**/*.svg`);
 
 const icons = svgPaths.map((svgPath) => {
-  const data = fs.readFileSync(svgPath, 'utf-8');
+  const data = fs.readFileSync(svgPath, "utf-8");
 
   return {
     name: path.parse(svgPath).name,
@@ -24,14 +25,14 @@ for (const icon of icons) {
 }
 
 fs.writeFileSync(
-  './preview/index.html',
-  nunjucks.render(path.join(__dirname, 'template.njk'), {
+  "./preview/index.html",
+  nunjucks.render(path.join(__dirname, "preview/template.njk"), {
     iconsBySize,
   })
 );
 
 function getIconSize(filePath) {
   const dirname = path.dirname(filePath);
-  const dirs = dirname.split('/');
+  const dirs = dirname.split("/");
   return dirs[dirs.length - 1];
 }
