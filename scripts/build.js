@@ -9,8 +9,8 @@ import { nanoid } from "nanoid";
 
 import { __dirname } from "../index.js";
 
-const SRC_DIR = path.join(__dirname, "../raw");
-const DIST_DIR = path.join(__dirname, "../dist");
+const SRC_DIR = path.join(__dirname, "raw");
+const DIST_DIR = path.join(__dirname, "dist");
 
 const svgo = () =>
   new SVGO({
