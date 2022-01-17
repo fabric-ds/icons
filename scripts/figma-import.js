@@ -14,7 +14,7 @@ const FIGMA_PROJECT_ID = "1qkEGDQWaftkOL7C360qVD";
 // const CANVAS_ID = '31:2';
 
 // Where we store the Figma token
-const FIGMA_TOKEN_PATH = path.join(__dirname, "../", ".FIGMA_TOKEN");
+const FIGMA_TOKEN_PATH = path.join(__dirname, ".FIGMA_TOKEN");
 
 (async function main() {
   const spinner = ora(
@@ -162,7 +162,7 @@ async function downloadSvgIcon({ iconName, url }) {
   // technically this makes the 'count' be off up above, but meh
   if (!name) return;
 
-  const path = `${__dirname}/../raw/${size}/${name}.svg`;
+  const path = `${__dirname}/raw/${size}/${name}.svg`;
 
   return fs.outputFile(path, svg, "utf8");
 }
