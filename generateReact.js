@@ -21,7 +21,7 @@ files.forEach((f) => {
     );
     const output = [
       `import React from 'react';`,
-      `export default (attrs) => React.createElement('svg', { ${attrs.join(
+      `export const ${capitalize(camelcase("icon-" + name))}${size} = (attrs) => React.createElement('svg', { ${attrs.join(
         ", "
       )}, dangerouslySetInnerHTML: { __html: '${
         el.innerHTML
@@ -39,9 +39,7 @@ files.forEach((f) => {
 const indexFile = icons
   .map(
     ({ name, size, filename }) =>
-      `export { default as ${capitalize(
-        camelcase("icon-" + name)
-      )}${size} } from './${filename}'`
+      `export * from './${filename}'`
   )
   .join("\n");
 writeFileSync("./react/index.js", indexFile, "utf-8");
