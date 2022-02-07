@@ -1,10 +1,3 @@
-import { join } from "path";
-
-// Since __dirname no longer exists with ESM, https://stackoverflow.com/a/50052194
-import { dirname } from "path";
-import { fileURLToPath } from "url";
-export const __dirname = dirname(fileURLToPath(import.meta.url));
-
-export default {
-  iconsPath: join(__dirname, "dist"),
-};
+import path from "path";
+export const __dirname = path.dirname(new URL(import.meta.url).pathname);
+export const iconsPath = path.join(__dirname, "dist");
