@@ -70,6 +70,16 @@ const FIGMA_TOKEN_PATH = path.join(__dirname, ".FIGMA_TOKEN");
     return;
   }
 
+  let iconNames;
+  try {
+    spinner.start("Parsing icon names from icons");
+    iconNames = processIconNames(icons);
+    spinner.succeed(`Found ${iconNames.length} icon names`);
+  } catch (e) {
+    spinner.fail('Borked trying to get names', + e.message)
+    return
+  }
+
   let urls;
   try {
     spinner.start(`Found ${icons.length} icons. Getting download URLs`);
@@ -229,4 +239,13 @@ async function readTokenFromDisk() {
   } catch {
     return "";
   }
+}
+
+const alphabetic = (a, b) => a.localeCompare(b)
+function processIconNames(icons) {
+  return [...new Set(icons.map(e => {
+      // split on the first dash-character only, and then take the second part of the split
+      return e.name.split(/-(.*)/s, 2)[1]
+    }))
+  ].sort(alphabetic)
 }
