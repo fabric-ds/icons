@@ -6,6 +6,7 @@ package-lock.json
 dist/
 vue/
 react/
+elements/
 preview/index.html
 
 *.log
