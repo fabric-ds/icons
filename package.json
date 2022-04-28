@@ -21,7 +21,7 @@
     "vue": "rimraf vue && npm run build:vue",
     "react": "rimraf react && npm run build:react",
     "elements": "rimraf elements && npm run build:elements",
-    "prepublishOnly": "rimraf dist && npm run build && npm run vue && npm run react",
+    "prepublishOnly": "rimraf dist && npm run build && npm run vue && npm run react && npm run elements",
     "import": "node ./scripts/figma-import.js",
     "build": "node ./scripts/build.js",
     "build:vue": "mkdir vue && node ./generateVue.js",
