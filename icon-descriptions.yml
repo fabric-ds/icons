@@ -1,195 +1,209 @@
 ---
-ads: NONE
-air-con: NONE
-airplane: NONE
-airplane-hotel: NONE
-alert: NONE
-all-wheel-drive: NONE
-archway: NONE
-attachment: NONE
-automatic: NONE
-back-wheel-drive: NONE
-bag: NONE
-bank-ident: NONE
-beach: NONE
-bed: NONE
-bell: NONE
-bin: NONE
-boat-length: NONE
-bolt: NONE
-bookmark: NONE
-building: NONE
-bulb: NONE
-bulldozer: NONE
-burger: NONE
-bus: NONE
-cabin: NONE
-calculator: NONE
-calendar: NONE
-camera: NONE
-camping: NONE
-car: NONE
-car-key: NONE
-car-rent: NONE
-car-service: NONE
-car-subscription: NONE
-cart: NONE
-chainsaw: NONE
-charger: NONE
-charter: NONE
-chat-support: NONE
-check: NONE
-checklist: NONE
-chevron-double-left: NONE
-chevron-double-right: NONE
-chevron-down: NONE
-chevron-left: NONE
-chevron-right: NONE
-chevron-up: NONE
-circle-plus: NONE
-circle-user: NONE
-clock: NONE
-close: NONE
-cog: NONE
-color-palette: NONE
-cursor: NONE
-dating: NONE
-diner: NONE
-discount: NONE
-dislike: NONE
-door: NONE
-dots: NONE
-download: NONE
-drink: NONE
-economy: NONE
-edit: NONE
-energy: NONE
-engine: NONE
-engine-belt: NONE
-exchange: NONE
-eye-off: NONE
-eye-on: NONE
-facebook: NONE
-favorite: NONE
-feedback: NONE
-file: NONE
-filter: NONE
-fireplace: NONE
-fishing: NONE
-fitness: NONE
-front-wheel-drive: NONE
-gas-diesel: NONE
-gas-fuel: NONE
-gas-hybrid: NONE
-graph-line: NONE
-graph-pie: NONE
-grid: NONE
-grill: NONE
-hiking: NONE
-hotel: NONE
-house-modern: NONE
-house-person: NONE
-image: NONE
-info: NONE
-instagram: NONE
-job: NONE
-keys: NONE
-krone: NONE
-landscape: NONE
-laundry: NONE
-layers: NONE
-leaf: NONE
-lift: NONE
-like: NONE
-link: NONE
-link-external: NONE
-list: NONE
-lock-shield: NONE
-logout: NONE
-mail: NONE
-manual: NONE
-map: NONE
-market: NONE
-measure: NONE
-message: NONE
-messages: NONE
-minus: NONE
-motorcycle: NONE
-mountain: NONE
-nettbil: NONE
-new-ad: NONE
-no-smoking: NONE
-norwegian-motor: NONE
-paint-roller: NONE
-parking: NONE
-paw: NONE
-phone: NONE
-pin: NONE
-plane-ticket: NONE
-playhouse: NONE
-plus: NONE
-product-blink: NONE
-product-bump: NONE
-product-carousel: NONE
-product-highlight-listing: NONE
-product-nabolagsprofil: NONE
-product-no-ads: NONE
-product-starred: NONE
-product-top: NONE
-propeller: NONE
-question: NONE
-rating-empty: NONE
-rating-full: NONE
-rating-half: NONE
-real-estate: NONE
-room-service: NONE
-sailboat: NONE
-sailing: NONE
-sauna: NONE
-search: NONE
-search-favorites: NONE
-seat: NONE
-send: NONE
-service: NONE
-share: NONE
-shower: NONE
-smiley-good: NONE
-smiley-happy: NONE
-smiley-neutral: NONE
-smiley-sad: NONE
-sorting: NONE
-spa: NONE
-speedometer: NONE
-stairs: NONE
-star-check: NONE
-stove: NONE
-suitcase: NONE
-support: NONE
-swimming: NONE
-tag: NONE
-theater: NONE
-torget-browser: NONE
-torget-delivery: NONE
-torget-headset: NONE
-torget-lamp: NONE
-torget-mixer: NONE
-torget-shipping: NONE
-torget-shopping: NONE
-torget-users: NONE
-torget-verified: NONE
-tractor: NONE
-triangle: NONE
-tv: NONE
-twitter: NONE
-up: NONE
-upload: NONE
-user: NONE
-users: NONE
-van: NONE
-verification: NONE
-wallet: NONE
-warranty: NONE
-wheelchair: NONE
-wifi: NONE
-woods: NONE
-youtube: NONE
+ChevronDouble-left: Dobbel pil venstre
+ChevronDouble-right: Dobbel pil høyre
+Chevron-down: Pil ned
+Chevron-up: Pil opp
+Chevron-left: Pil venstre
+Chevron-right: Pil høyre
+Rating-empty: Tom blå stjerne
+Rating-half: Halv full blå stjerne
+Rating-full: Full blå stjerne
+Pin: Kart pin
+Verification: Blått skjold, verifisert bruker
+Minus: Minus
+Check: Check
+Plus: Pluss
+Close: Kryss
+NewAd: Ny annonse
+Ads: Annonse
+Bookmark: Bokmerke
+Messages: Snakkeboble
+Grid: Grid
+Camping: Campingvogner
+Van: Bobil
+Car: Bil
+CarRent: Leiebil
+Cart: Leiebil
+Cabin: Feriehus
+Dating: Møteplassen
+Market: Torget
+Job: Jobb
+PaintRoller: Mitt anbud
+RealEstate: Eiendom
+Tractor: Eiendom
+Bulldozer: Bulldozer
+Chainsaw: Motorsag
+Nettbil: Nettbil
+AirplaneHotel: Fly og hotell
+Hotel: hotell
+Sailboat: Båt
+Airplane: Reise
+Economy: Økonomi
+Motorcycle: MC
+CarSubscription: Bilabonnement
+Filter: Filter
+List: Liste
+Dots: Tre prikker
+Map: Kart pin
+Sorting: Sortering
+Up: Pil opp
+Landscape: Fjell og sol
+Send: Papirfly
+Dislike: Tommel ned
+Like: Tommel opp
+TorgetShopping: Handlekurv
+TorgetUsers: Tre personer
+TorgetVerified: Nettleser med skjold
+TorgetBrowser: Nettleser vindu
+TorgetShipping: Lastebil
+TorgetDelivery: Hånd
+TorgetLamp: Lampe
+TorgetMixer: Kjøkkenmaskin
+TorgetHeadset: Hodetelefoner
+SmileyHappy: Glad smilefjes
+SmileyGood: Fornøyd smil
+SmileyNeutral: Nøytralt smilefjes
+SmileySad: Trist smilefjes
+Layers: Lag
+ProductBump: Fremhevet produkt
+ProductCarousel: Produktkarusell
+ProductStarred: Stjerner
+ProductTop: Produkt topp
+ProductBlink: Rakett
+Sailing: Seilbåt
+Mountain: Fjell
+Woods: Trær
+Hiking: Skogssti
+Stove: Ovn
+TV: TV
+Bus: Buss
+Fishing: Fiskekrok
+Door: Dør
+Sauna: Badstue
+Theater: Masker
+Fitness: Vekter
+Beach: Strandparasoll
+Paw: Pote
+Wifi: Wifi symbol
+Playhouse: Klatrestativ
+Fireplace: Peis
+Grill: Grill
+RoomService: Serveringsbrett
+Spa: Blomst
+Drink: Cocktail glass
+Laundry: Vaskemaskin
+AirCon: Air condition
+Wheelchair: Rullestol
+Swimming: Svømme
+Diner: Kniv og gaffel
+Shower: Dusj
+NoSmoking: Røyking forbudt
+Bulb: Lyspære
+Image: Bilde thumbnail
+GraphLine: Linjegraf
+GraphPie: Kakediagram
+Camera: Kamera
+Building: Boligblokk
+Pin: Pin
+Cursor: Pil
+Leaf: Blad
+FrontWheelDrive: Forhjulstrekk
+BackWheelDrive: Bakhjulstrekk
+AllWheelDrive: Firehjulstrekk
+EngineBelt: Viftereim
+Engine: Motorblokk
+ColorPalette: Fargepalett
+Keys: Nøkler
+Seat: Sete
+File: Fil
+Discount: Prosent
+Speedometer: Speedometer
+Charter: Koffert
+PlaneTicket: Flybillett
+Calculator: Kalkulator
+CirclePlus: Pluss
+CircleUser: Profilbilde
+Krone: KR
+Link: Link
+StarCheck: Stjerne med checkmark
+CarKey: Bil med nøkkel
+GasHybrid: Stikkontakt og dråpe
+Phone: Mobiltelefon
+Wallet: Lommebok
+Messages: Snakkeboble med smilefjes
+Logout: Logg ut
+Bed: Seng og tak
+HouseModern: Funkisbolig
+HousePerson: Hus med person
+SearchFavorites: Forstørrelsesglass med hjerte
+Users: To personer
+User: Person
+Support: Kundebehandler
+ChatSupport: Snakkebobler med smilefjes
+Mail: Konvolutt
+EyeOff: Øye med strek over
+EyeOn: Øye
+Map: Kart
+Burger: Hamburgermeny
+List: Lister
+NorwegianMotor: NBF
+Exchange: Bytte
+CarService: Bil med stjerne
+Checklist: Sjekkliste
+Service: Service
+Warranty: Stjerne med checkmark
+BankIdent: Skjold med checkmark
+Message: Snakkeboble
+Suitcase: Koffert
+Bag: Håndveske
+Bin: Søppeldunk
+Favorite: Hjerte
+Download: Last ned
+Search: Forstørrelseglass
+Triangle: Varseltrekant
+Alert: Utropstegn
+Info: Info
+Question: Spørsmålstegn
+Cog: Tannhjul
+Edit: Blyant
+Attachment: Binders
+LinkExternal: Ekstern link
+Share: Dele
+Feedback: Snakkebobler
+Clock: Klokke
+Bell: Bjelle
+Manual: Girkasse manuell
+Automatic: Girkasse automat
+GasDiesel: Dieselpumpe
+GasFuel: Bensinpumpe
+Propeller: Propell
+BoatLength: Båtlengde
+Lift: Heis
+Energy: Energi
+Bolt: Lyn
+Parking: Parkering
+Bed: Seng
+Stairs: Trapper
+Measure: Måle
+Tag: Tag
+Calendar: Kalender
+Archway: Buegang
+ScrollUp: Pil opp
+Upload: Last opp
+LockShield: Skjold med hengelås
+ProductHighlightListing: Fremhevet visning
+ProductNoAds: Megafon
+ProductNabolagsprofil: Hus med pin
+Facebook: Facebook logo
+Twitter: Twitter logo
+Instagram: Instagram logo
+Youtube: YouTube logo
+Charger: Lader
+HouseCabin: Hytte
+Refresh: Oppdater
+Expand: Ekspander
+BatteryFull: Batteri 100%
+BatteryHalfFull: Batteri 50%
+BatteryEmpty: Batteri 0%
+PhoneUsed: Mobiltelefon brukt
+PhoneScratched: Mobiltelefon med riper
