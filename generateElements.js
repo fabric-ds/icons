@@ -26,7 +26,7 @@ files.forEach((f) => {
         `import { LitElement, html } from 'lit';`,
         `import { unsafeHTML } from 'lit/directives/unsafe-html.js';`,
         `const icon = \`${el.innerHTML}\`;`,
-        `class ${className} extends LitElement {`,
+        `export class ${className} extends LitElement {`,
         `  get attrs() {`,
         `    const attrs = { ${attrs.join(', ')} };`,
         `    Array.from(this.attributes).forEach(({ nodeName, nodeValue }) => attrs[nodeName] = nodeValue);`,
@@ -35,7 +35,7 @@ files.forEach((f) => {
         `  render() { return html\`\${unsafeHTML(\`<svg \${this.attrs}>\${icon}</svg>\`)}\`; }`,
         `}`,
         `if (!customElements.get('f-icon-${name}${size}', ${className})) {`,
-        `  customElements.define('f-icon-${name}${size}', ${className})`,
+        `  customElements.define('f-icon-${name}${size}', ${className});`,
         `}`,
     ].join("\n");
     const filename = `${name}-${size}.js`;
@@ -50,7 +50,7 @@ files.forEach((f) => {
 const indexFile = icons
   .map(
     ({ name, size, filename }) =>
-      `import from './${filename}'`
+      `export * from './${filename}';`
   )
   .join("\n");
 writeFileSync("./elements/index.js", indexFile, "utf-8");
