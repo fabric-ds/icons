@@ -18,35 +18,20 @@ You will need to install both Fabric Elements and Lit Element which is the libra
 npm install lit @fabric-ds/icons
 ```
 
-##### Import all elements
+##### Import elements
 
-Import the elements file, importing will load components. 
-Once imported, all custom elements will be able for use in the page. Element names are prefixed with `f-icon`
+Import the individual element file, importing will load the component. 
+Once imported, run your script through whatever bundling process your app uses (Rollup, Esbuild, etc) 
+after which the component can be used in the page.
 
 ```js
-import from '@fabric-ds/icons/elements';
+import '@fabric-ds/icons/elements/attachment-16';
+import '@fabric-ds/icons/elements/attachment-24';
 ```
 
 ```html
 <f-icon-attachment16></f-icon-attachment16>
 <f-icon-attachment24></f-icon-attachment24>
-<f-icon-attachment32></f-icon-attachment32>
-<f-icon-automatic24></f-icon-automatic24>
-<f-icon-automatic32></f-icon-automatic32>
-etc
-```
-
-##### Import individual elements
-
-Import the individual element file, importing will load the component. 
-Once imported, the component can be used in the page.
-
-```js
-import from '@fabric-ds/icons/elements/attachment-16';
-```
-
-```html
-<f-icon-attachment16></f-icon-attachment16>
 ```
 
 ## Development
