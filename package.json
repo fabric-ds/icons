@@ -25,9 +25,9 @@
     "prepublishOnly": "rimraf dist && npm run build && npm run vue && npm run react && npm run elements",
     "import": "node ./scripts/figma-import.js",
     "build": "node ./scripts/build.js",
-    "build:vue": "mkdir vue && node ./generateVue.js",
-    "build:react": "mkdir react && node ./generateReact.js",
-    "build:elements": "mkdir elements && node ./generateElements.js",
+    "build:vue": "mkdir vue && node ./generateVue.js && node ./vue.eik.js",
+    "build:react": "mkdir react && node ./generateReact.js && node ./react.eik.js",
+    "build:elements": "mkdir elements && node ./generateElements.js && node ./elements.eik.js",
     "render": "node preview/render.js",
     "start": "npm run build && node preview/render.js && open ./preview/index.html",
     "version": "npm publish",
@@ -36,9 +36,11 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@eik/esbuild-plugin": "^1.1.11",
     "@sindresorhus/slugify": "^1.1.0",
     "camelcase": "^6.2.0",
     "chalk": "^4.1.0",
+    "esbuild": "^0.14.42",
     "fs-extra": "^9.0.1",
     "glob": "^7.1.7",
     "jsdom": "^16.5.3",
@@ -52,5 +54,15 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "eik": {
+    "server": "https://assets.finn.no",
+    "type": "package",
+    "files": "./dist",
+    "import-map": [
+      "https://assets.finn.no/map/react/v2",
+      "https://assets.finn.no/map/vue/v3",
+      "https://assets.finn.no/map/custom-elements/v1"
+    ]
   }
 }

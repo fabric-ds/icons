@@ -74,6 +74,18 @@ npm publish
 git push --follow-tags
 ```
 
+### Eik
+
+Eik versions for each of Vue, Elements and React icons are automatically created in the ./dist folder when builds are run. Eik configuration is based on values in package.json (name, version and eik keys) and running Eik publish will publish everything in the dist folder to Eik under the path `https://assets.finn.no/pkg/{name}/{version}/`. 
+
+Example Paths:
+* React: `https://assets.finn.no/pkg/@fabric-ds/icons/v1/react/icons.min.js`
+* Vue: `https://assets.finn.no/pkg/@fabric-ds/icons/v1/vue/icons.min.js`
+* Custom Elements: `https://assets.finn.no/pkg/@fabric-ds/icons/v1/elements/icons.min.js`
+* Raw ads svg at size 16: `https://assets.finn.no/pkg/@fabric-ds/icons/v1/16/ads.svg`
+* Raw air con svg at size 24: `https://assets.finn.no/pkg/@fabric-ds/icons/v1/24/air-con.svg`
+
+
 ### Troubleshooting
 
 #### Auth
