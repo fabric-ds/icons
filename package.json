@@ -22,7 +22,7 @@
     "vue": "rimraf vue && npm run build:vue",
     "react": "rimraf react && npm run build:react",
     "elements": "rimraf elements && npm run build:elements",
-    "prepublishOnly": "rimraf dist && npm run build && npm run vue && npm run react && npm run elements",
+    "prepublishOnly": "npx eik login && rimraf dist && npm run build && npm run vue && npm run react && npm run elements",
     "import": "node ./scripts/figma-import.js",
     "build": "node ./scripts/build.js",
     "build:vue": "mkdir vue && node ./generateVue.js && node ./vue.eik.js",
@@ -30,12 +30,13 @@
     "build:elements": "mkdir elements && node ./generateElements.js && node ./elements.eik.js",
     "render": "node preview/render.js",
     "start": "npm run build && node preview/render.js && open ./preview/index.html",
-    "version": "npm publish",
+    "version": "npm publish && npx eik publish",
     "postversion": "git push --follow-tags",
     "update-lib": "npm run import && npm run build && npm run render && cp ./preview/index.html ./docs/index.html"
   },
   "license": "MIT",
   "devDependencies": {
+    "@eik/cli": "^2.0.22",
     "@eik/esbuild-plugin": "^1.1.11",
     "@sindresorhus/slugify": "^1.1.0",
     "camelcase": "^6.2.0",
