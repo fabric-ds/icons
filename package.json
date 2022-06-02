@@ -1,7 +1,7 @@
 {
   "name": "@fabric-ds/icons",
   "type": "module",
-  "version": "0.4.2",
+  "version": "0.4.3",
   "description": "Fabric's icon set",
   "main": "index.js",
   "files": [
@@ -52,5 +52,19 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "eik": {
+    "server": "https://assets.finn.no",
+    "type": "package",
+    "files": {
+      "react": "./dist/react",
+      "vue": "./dist/vue",
+      "elements": "./dist/elements"
+    },
+    "import-map": [
+      "https://assets.finn.no/map/react/v2",
+      "https://assets.finn.no/map/vue/v1",
+      "https://assets.finn.no/map/custom-elements/v1"
+    ]
   }
 }
