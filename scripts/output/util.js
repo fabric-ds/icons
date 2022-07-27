@@ -18,10 +18,6 @@ const getNames = ({ name, size }) => ({
 const __dirname = getDirname(import.meta.url)
 export const getSVGs = () => glob.sync(join(__dirname, '../../dist/**/*.svg')).map(f => {
   const _svg = readFileSync(f, 'utf-8')
-  if (!_svg) {
-    console.warn("WTF", f)
-    return
-  }
   try {
     const { size, name } = getNameAndSize(f)
     const svg = getSVG(_svg)
