@@ -1,50 +1,55 @@
 #!/usr/bin/env node
 
-import SVGO from "svgo";
+import { optimize } from "svgo";
 import glob from "glob";
 import chalk from "chalk";
 import path from "path";
 import fs from "fs-extra";
 import { nanoid } from "nanoid";
+import { getElement, getNameAndSize, pascalCase } from './output/util.js'
+import { readFileSync } from 'node:fs'
+import yaml from 'js-yaml'
 
 import { __dirname } from "../index.js";
+
+const descriptionsFile = readFileSync(path.join(__dirname, 'icon-descriptions.yml'))
+const descriptions = yaml.load(descriptionsFile)
 
 const SRC_DIR = path.join(__dirname, "raw");
 const DIST_DIR = path.join(__dirname, "dist");
 
-const svgo = () =>
-  new SVGO({
-    plugins: [
-      {
-        convertColors: {
-          currentColor: true,
-        },
-      },
-      {
+const svgoPlugins = [
+  { name: 'preset-default',
+    params: {
+      overrides: {
+        convertColors: { currentColor: true },
         removeViewBox: false,
-      },
-      {
-        sortAttrs: true,
-      },
-      {
-        // add unique prefixes to the ids
-        prefixIds: {
-          delim: "",
-          prefix: nanoid(5),
-        },
-      },
-    ],
-  });
+        removeTitle: false,
+        prefixIds: { delim: "", prefix: nanoid(5), },
+      }
+    }
+  },
+  { name: 'sortAttrs' }
+]
 
 const files = glob.sync(`${SRC_DIR}/**/*.svg`);
 
-files.forEach(async (filePath) => {
+files.forEach((filePath) => {
   try {
-    const rawData = await fs.readFile(filePath, "utf-8");
+    const rawData = fs.readFileSync(filePath, "utf-8");
+    if (!rawData) {
+      console.log(filePath, "is an empty file, this is bad")
+      return
+    }
+    const dataAsHTMLElement = getElement({ selector: 'div', htmlString: `<div>${rawData}</div>` })
+    const { name } = getNameAndSize(filePath)
+    const title = descriptions[pascalCase(name)]
+    if (title) dataAsHTMLElement.querySelector('svg').prepend(`<title>${title}</title>`)
+    const dataWithTitle = dataAsHTMLElement.innerHTML
 
-    const prevFileSize = Buffer.byteLength(rawData, "utf8");
+    const prevFileSize = Buffer.byteLength(dataWithTitle, "utf8");
 
-    const { data: optimizedData } = await svgo().optimize(rawData);
+    const { data: optimizedData } = optimize(dataWithTitle, { plugins: svgoPlugins });
 
     const optimizedFileSize = Buffer.byteLength(optimizedData, "utf8");
 
