@@ -9,14 +9,13 @@ import { nanoid } from "nanoid";
 import { getElement, getNameAndSize, pascalCase } from './output/util.js'
 import { readFileSync } from 'node:fs'
 import yaml from 'js-yaml'
+import { basedir } from "../index.js";
 
-import { __dirname } from "../index.js";
-
-const descriptionsFile = readFileSync(path.join(__dirname, 'icon-descriptions.yml'))
+const descriptionsFile = readFileSync(path.join(basedir, 'icon-descriptions.yml'))
 const descriptions = yaml.load(descriptionsFile)
 
-const SRC_DIR = path.join(__dirname, "raw");
-const DIST_DIR = path.join(__dirname, "dist");
+const SRC_DIR = path.join(basedir, "raw");
+const DIST_DIR = path.join(basedir, "dist");
 
 const svgoPlugins = [
   { name: 'preset-default',

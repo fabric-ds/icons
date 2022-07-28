@@ -1,11 +1,16 @@
 #!/usr/bin/env node
 import ora from "ora";
 import fs from "fs-extra";
-import path from "path";
+import path from "node:path";
 import fetch from "node-fetch";
+import glob from "glob";
 import prompts from "prompts";
 import slugify from "@sindresorhus/slugify";
-import { __dirname } from "../index.js";
+import { basedir } from "../index.js";
+import { getNameAndSize } from './output/util.js'
+
+const existingIcons = glob.sync(path.join(basedir, './raw/**/*.svg')).map(getNameAndSize).map(({ size, name }) => size+name)
+const downloadedIcons = []
 
 // The Figma project where we can find our icons
 const FIGMA_PROJECT_ID = "1qkEGDQWaftkOL7C360qVD";
@@ -14,7 +19,7 @@ const FIGMA_PROJECT_ID = "1qkEGDQWaftkOL7C360qVD";
 // const CANVAS_ID = '31:2';
 
 // Where we store the Figma token
-const FIGMA_TOKEN_PATH = path.join(__dirname, ".FIGMA_TOKEN");
+const FIGMA_TOKEN_PATH = path.join(basedir, ".FIGMA_TOKEN");
 
 (async function main() {
   const spinner = ora(
@@ -107,6 +112,9 @@ const FIGMA_TOKEN_PATH = path.join(__dirname, ".FIGMA_TOKEN");
   spinner.succeed();
 
   spinner.succeed(`Sucessfully downloaded ${icons.length} icons!`);
+
+  const removals = existingIcons.some(e => !downloadedIcons.includes(e))
+  if (removals) console.error("There are icons missing from Figma that are in the local raw folder!")
 })();
 
 /**
@@ -172,7 +180,8 @@ async function downloadSvgIcon({ iconName, url }) {
   // technically this makes the 'count' be off up above, but meh
   if (!name) return;
 
-  const path = `${__dirname}/raw/${size}/${name}.svg`;
+  const path = `${basedir}/raw/${size}/${name}.svg`;
+  downloadedIcons.push(size+name)
 
   return fs.outputFile(path, svg, "utf8");
 }

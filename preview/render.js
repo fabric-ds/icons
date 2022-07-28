@@ -2,7 +2,7 @@ import fs from "fs-extra";
 import glob from "glob";
 import path from "path";
 import nunjucks from "nunjucks";
-import { __dirname } from "../index.js";
+import { basedir } from "../index.js";
 
 const svgPaths = glob.sync(`./dist/**/*.svg`);
 
@@ -26,7 +26,7 @@ for (const icon of icons) {
 
 fs.writeFileSync(
   "./preview/index.html",
-  nunjucks.render(path.join(__dirname, "preview/template.njk"), {
+  nunjucks.render(path.join(basedir, "preview/template.njk"), {
     iconsBySize,
   })
 );

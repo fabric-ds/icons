@@ -21,7 +21,7 @@
   "scripts": {
     "frameworks": "rimraf elements react vue && npm run build:frameworks",
     "prepublishOnly": "rimraf dist && npm run build && npm run build:frameworks",
-    "import": "node ./scripts/figma-import.js",
+    "import": "node ./scripts/import.js",
     "build": "node ./scripts/build.js",
     "build:frameworks": "node ./scripts/output",
     "render": "node preview/render.js",
