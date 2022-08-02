@@ -4,6 +4,10 @@ AirCon: Air condition
 Airplane: Reise
 AirplaneHotel: Fly og hotell
 Alert: Utropstegn
+AlertError16: Rødt utropstegn
+AlertWarning16: Gult utropstegn
+AlertInfo16: Info
+AlertSuccess16: Grønt hake
 AllWheelDrive: Firehjulstrekk
 Archway: Buegang
 Attachment: Binders
