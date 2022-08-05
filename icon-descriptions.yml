@@ -1,51 +1,51 @@
 ---
-Ads: Annonse
-AirCon: Air condition
-Airplane: Reise
+Ads: Ark med bilde og overskrift
+AirCon: Liten luftkjøler
+Airplane: Fly
 AirplaneHotel: Fly og hotell
-Alert: Utropstegn
-AlertError: Rødt utropstegn
-AlertWarning: Gult utropstegn
-AlertInfo: Info
-AlertSuccess: Grønt hake
-AllWheelDrive: Firehjulstrekk
+Alert: Sirkel med utropstegn
+AlertError: Rød åttekant med hvitt utropstegn
+AlertInfo: Blå sirkel med bokstaven I
+AlertSuccess: Grønn avkrysset sirkel
+AlertWarning: Gul varseltrekant med utropstegn
+AllWheelDrive:  Firehjuls drivverk
 Archway: Buegang
 Attachment: Binders
 Automatic: Girkasse automat
-BackWheelDrive: Bakhjulstrekk
+BackWheelDrive: Bakhjuls drivverk
 Bag: Håndveske
-BankIdent: Skjold med checkmark
-BatteryEmpty: Batteri 0%
-BatteryFull: Batteri 100%
-BatteryHalfFull: Batteri 50%
+BankIdent: Avkrysset skjold
+BatteryEmpty: Tomt batteri
+BatteryFull: Fullt batteri
+BatteryHalfFull: Halvfullt batteri
 Beach: Strandparasoll
 Bed: Seng
 Bell: Bjelle
 Bin: Søppeldunk
-BoatLength: Båtlengde
+BoatLength: Båt med piler i begge retninger
 Bolt: Lyn
 Bookmark: Bokmerke
 Building: Boligblokk
 Bulb: Lyspære
-Bulldozer: Bulldozer
-Burger: Hamburgermeny
+Bulldozer: Bulldoser
+Burger: Tre horisontale streker
 Bus: Buss
 Cabin: Feriehus
 Calculator: Kalkulator
 Calendar: Kalender
 Camera: Kamera
-Camping: Campingvogner
+Camping: Campingvogn
 Car: Bil
-CarKey: Bil med nøkkel
-CarRent: Leiebil
-CarService: Bil med stjerne
-CarSubscription: Bilabonnement
-Cart: Leiebil
+CarKey: Bil og nøkkel
+CarRent: Bil og klokke
+CarService: Bil og stjerne
+CarSubscription: Bil og sjekkliste
+Cart: Handlevogn
 Chainsaw: Motorsag
-Charger: Lader
+Charger: Kabel
 Charter: Koffert
 ChatSupport: Snakkebobler med smilefjes
-Check: Check
+Check: Avkrysset
 Checklist: Sjekkliste
 Chevron-down: Pil ned
 Chevron-left: Pil venstre
@@ -53,155 +53,155 @@ Chevron-right: Pil høyre
 Chevron-up: Pil opp
 ChevronDouble-left: Dobbel pil venstre
 ChevronDouble-right: Dobbel pil høyre
-CirclePlus: Pluss
-CircleUser: Profilbilde
+CirclePlus: Sirkel med pluss
+CircleUser: Sirkel med ansikt
 Clock: Klokke
 Close: Kryss
 Cog: Tannhjul
-ColorPalette: Fargepalett
-Cursor: Pil
-Dating: Møteplassen
+ColorPalette: Fargekart
+Cursor: Musepeker over en sirkel
+Dating: To hjerter
 Diner: Kniv og gaffel
-Discount: Prosent
+Discount: Prosenttegn
 Dislike: Tommel ned
 Door: Dør
 Dots: Tre prikker
-Download: Last ned
+Download: Pil ned til harddisk
 Drink: Cocktail glass
-Economy: Økonomi
+Economy: En seddel og to mynter
 Edit: Blyant
-Energy: Energi
-Engine: Motorblokk
+Energy: Kabel med støpsel og planteblad
+Engine: Motor
 EngineBelt: Viftereim
-Exchange: Bytte
-Expand: Ekspander
-EyeOff: Øye med strek over
+Exchange: Sirkel med to piler pekende i hver sin retning
+Expand: To diagonale piler pekende i hver sin retning
+EyeOff: Overstreket øye
 EyeOn: Øye
 Facebook: Facebook logo
 Favorite: Hjerte
 Feedback: Snakkebobler
-File: Fil
-Filter: Filter
+File: Ark med brettet kant i øvre høyre hjørne og en sirkel med plusstegn
+Filter: To horisontale skyveknapper over hverandre
 Fireplace: Peis
 Fishing: Fiskekrok
-Fitness: Vekter
-FrontWheelDrive: Forhjulstrekk
+Fitness: Treningsvekt
+FrontWheelDrive: Forhjuls drivverk
 GasDiesel: Dieselpumpe
 GasFuel: Bensinpumpe
-GasHybrid: Stikkontakt og dråpe
+GasHybrid: Rundt støpsel med dråpe
 GraphLine: Linjegraf
 GraphPie: Kakediagram
-Grid: Grid
-Grill: Grill
+Grid: Fire kvadrater som danner et større kvadrat
+Grill: Kulegrill
 Hiking: Skogssti
-Hotel: hotell
+Hotel: Hotell
 HouseCabin: Hytte
-HouseModern: Funkisbolig
+HouseModern: Funkishus
 HousePerson: Hus med person
-Image: Bilde thumbnail
-Info: Info
+Image: Ark med brettet kant i øvre høyre hjørne samt sol og fjell
+Info: Sirkel med bokstaven I
 Instagram: Instagram logo
-Job: Jobb
-Keys: Nøkler
-Krone: KR
-Landscape: Fjell og sol
+Job: Dokumentmappe
+Keys: To nøkler på nøkkelring
+Krone: Sirkel med KR
+Landscape: Sol og fjell
 Laundry: Vaskemaskin
-Layers: Lag
-Leaf: Blad
+Layers: Tre kvadrater som flyter inn i hverandre
+Leaf: Planteblad
 Lift: Heis
 Like: Tommel opp
-Link: Link
-LinkExternal: Ekstern link
-List: Liste
+Link: Lenke
+LinkExternal: Kvadrat med pil opp mot høyre
+List: To rektangler under hverandre
 LockShield: Skjold med hengelås
-Logout: Logg ut
+Logout: Stående rektangel med pil ut til høyre
 Mail: Konvolutt
 Manual: Girkasse manuell
-Map: Kart
-Market: Torget
-Measure: Måle
+Map: Kart med kartnål
+Market: Sofa
+Measure: Stiplet kvadrat med målepiler
 Message: Snakkeboble
 Minus: Minus
-Motorcycle: MC
-Mountain: Fjell
-Nettbil: Nettbil
-NewAd: Ny annonse
-NoSmoking: Røyking forbudt
-NorwegianMotor: NBF
-PaintRoller: Mitt anbud
-Parking: Parkering
-Paw: Pote
-Phone: Mobiltelefon
-PhoneScratched: Mobiltelefon med riper
-PhoneUsed: Mobiltelefon brukt
-Pin: Kart pin
-PlaneTicket: Flybillett
+Motorcycle: Motorsykkel
+Mountain: Fjell med flagg på toppen
+Nettbil: To sirkler med en halvsirkel over
+NewAd: Ark med bilde, overskrift og fremhevet plusstegn
+NoSmoking: Overstreket sigarett
+NorwegianMotor: Sirkel med NBF
+PaintRoller: Malingsrulle i aksjon
+Parking: Sirkel med bokstaven P
+Paw: Kattepote
+Phone: Smarttelefon
+PhoneScratched: Smarttelefon med tre riper
+PhoneUsed: Smarttelefon med tre riper i glasset
+Pin: Kartnål
+PlaneTicket: Hånd med flybillett
 Playhouse: Klatrestativ
 Plus: Pluss
 ProductBlink: Rakett
-ProductBump: Fremhevet produkt
-ProductCarousel: Produktkarusell
-ProductHighlightListing: Fremhevet visning
-ProductNabolagsprofil: Hus med pin
-ProductNoAds: Megafon
-ProductStarred: Stjerner
-ProductTop: Produkt topp
-Propeller: Propell
-Question: Spørsmålstegn
+ProductBump: Bilde med tekst som fremheves av pil opp
+ProductCarousel: Fremhevet stående rektangel med to rektangler i bakgrunnen
+ProductHighlightListing: Tekst med fremhevet bilde
+ProductNabolagsprofil: Hus med fremhevet kartnål
+ProductNoAds: Støyende megafon
+ProductStarred: Tre stjerner med tekst under
+ProductTop: Pil mot bilde med tekst under
+Propeller: Snurrende propell
+Question: Sirkel med spørsmålstegn
 Rating-empty: Tom blå stjerne
 Rating-full: Full blå stjerne
-Rating-half: Halv full blå stjerne
-RealEstate: Eiendom
-Refresh: Oppdater
-RoomService: Serveringsbrett
-Sailboat: Båt
-Sailing: Seilbåt
-Sauna: Badstue
+Rating-half: Halvfull blå stjerne
+RealEstate: Hus med hage
+Refresh: Roterende pil
+RoomService: Hanskekledd hånd og serveringsbrett med kuppel
+Sailboat: To fugler og seilbåt på vannet
+Sailing: Seilbåt på vannet
+Sauna: Hus med varme
 ScrollUp: Pil opp
-Search: Forstørrelseglass
+Search: Forstørrelsesglass
 SearchFavorites: Forstørrelsesglass med hjerte
-Seat: Sete
+Seat: Flysete
 Send: Papirfly
-Service: Service
-Share: Dele
-Shower: Dusj
+Service: Roterende pil med skiftenøkkel
+Share: Kvadrat med pil ut til høyre
+Shower: Rennende dusjhode
 SmileyGood: Fornøyd smil
 SmileyHappy: Glad smilefjes
-SmileyNeutral: Nøytralt smilefjes
-SmileySad: Trist smilefjes
-Sorting: Sortering
-Spa: Blomst
+SmileyNeutral: Uttrykksløst fjes
+SmileySad: Trist fjes
+Sorting: Tekstliste med pil ned på siden
+Spa: Vannlilje
 Speedometer: Speedometer
-Stairs: Trapper
-StarCheck: Stjerne med checkmark
-Stove: Ovn
-Suitcase: Koffert
-Support: Kundebehandler
-Swimming: Svømme
-TV: TV
-Tag: Tag
-Theater: Masker
-TorgetBrowser: Nettleser vindu
-TorgetDelivery: Hånd
+Stairs: Trappetrinn med diagonal pil opp
+StarCheck: Stjerne med fremhevet avkryssing
+Stove: Koketopp med tre plater
+Suitcase: Stresskoffert
+Support: Person med hodesett
+Swimming: Person som svømmer
+TV: Flatskjerm
+Tag: Merkelapp
+Theater: Kostymemaske med smilefjes
+TorgetBrowser: Nettleservindu med t-skjorte og fremhevet musepeker
+TorgetDelivery: Hånd som holder en liten eske
 TorgetHeadset: Hodetelefoner
-TorgetLamp: Lampe
+TorgetLamp: Gulvlampe
 TorgetMixer: Kjøkkenmaskin
-TorgetShipping: Lastebil
-TorgetShopping: Handlekurv
+TorgetShipping: Lastebil i fart
+TorgetShopping: Handlevogn
 TorgetUsers: Tre personer
-TorgetVerified: Nettleser med skjold
-Tractor: Eiendom
+TorgetVerified: Nettleser med fremhevet skjold nederst til høyre
+Tractor: Traktor
 Triangle: Varseltrekant
 Twitter: Twitter logo
-Up: Pil opp
-Upload: Last opp
+Up: Kvadrat med pil opp
+Upload: Pil opp fra harddisk
 User: Person
 Users: To personer
 Van: Bobil
-Verification: Blått skjold, verifisert bruker
+Verification: Blått avkrysset skjold
 Wallet: Lommebok
-Warranty: Stjerne med checkmark
+Warranty: Avkrysset rosett
 Wheelchair: Rullestol
-Wifi: Wifi symbol
-Woods: Trær
+Wifi: WiFi symbol, tre bølger over en sirkel
+Woods: To grantrær
 Youtube: YouTube logo
