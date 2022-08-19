@@ -75,8 +75,6 @@ const FIGMA_TOKEN_PATH = path.join(basedir, ".FIGMA_TOKEN");
     return;
   }
 
-  console.log(icons);
-
   let iconNames;
   try {
     spinner.start("Parsing icon names from icons");
@@ -190,14 +188,13 @@ async function downloadSvgIcon({ iconName, url }) {
 
 const hasNumbers = /\d/;
 const isCompound = /Size/;
-const isOtherCompound = /Property/;
 const correctSingleFormat = /\d\d\//;
 const poorlyNamedIcons = (comp) => {
   if (comp.containing_frame?.name?.match(hasNumbers)) {
     console.log("DISCARDING", comp.containing_frame.name);
     return false;
   }
-  if (!comp.name.match(isCompound) && !comp.name.match(isOtherCompound)) {
+  if (!comp.name.match(isCompound)) {
     if (
       !comp.name.match(correctSingleFormat) ||
       comp.name.split("/")[1].match(hasNumbers)
@@ -209,7 +206,7 @@ const poorlyNamedIcons = (comp) => {
   return true;
 };
 const parseGroupName = (comp) =>
-  comp.name.replace("Size=", "").replace("Property 1=", "") + "-" + slugify(comp.containing_frame.name);
+  comp.name.replace("Size=", "") + "-" + slugify(comp.containing_frame.name);
 const parseSingleName = (comp) => slugify(comp.name);
 /**
  * Get the icons in the Figma Project
