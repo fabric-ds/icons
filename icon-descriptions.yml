@@ -1,4 +1,5 @@
 ---
+ActiveAds: Ark med bilde og overskrift med fremhevet avkryssing
 Ads: Ark med bilde og overskrift
 AirCon: Liten luftkjøler
 Airplane: Fly
@@ -14,6 +15,7 @@ Attachment: Binders
 Automatic: Girkasse automat
 BackWheelDrive: Bakhjuls drivverk
 Bag: Håndveske
+Bank: En bank med tre søyler
 BankIdent: Avkrysset skjold
 BatteryEmpty: Tomt batteri
 BatteryFull: Fullt batteri
@@ -31,6 +33,7 @@ Bulldozer: Bulldoser
 Burger: Tre horisontale streker
 Bus: Buss
 Cabin: Feriehus
+CabinHut: Hytte med hage
 Calculator: Kalkulator
 Calendar: Kalender
 Camera: Kamera
@@ -44,6 +47,7 @@ Cart: Handlevogn
 Chainsaw: Motorsag
 Charger: Kabel
 Charter: Koffert
+ChatRequest: Snakkeboble ved siden av en person
 ChatSupport: Snakkebobler med smilefjes
 Check: Avkrysset
 Checklist: Sjekkliste
@@ -59,6 +63,7 @@ Clock: Klokke
 Close: Kryss
 Cog: Tannhjul
 ColorPalette: Fargekart
+CreditCard: To kredittkort
 Cursor: Musepeker over en sirkel
 Dating: To hjerter
 Diner: Kniv og gaffel
@@ -94,6 +99,7 @@ GraphPie: Kakediagram
 Grid: Fire kvadrater som danner et større kvadrat
 Grill: Kulegrill
 Hiking: Skogssti
+History: Roterende pil til venstre med en klokke
 Hotel: Hotell
 HouseCabin: Hytte
 HouseModern: Funkishus
@@ -116,6 +122,7 @@ List: To rektangler under hverandre
 LockShield: Skjold med hengelås
 Logout: Stående rektangel med pil ut til høyre
 Mail: Konvolutt
+Mailbox: Postkasse med et flagg som signaliserer ny post
 Manual: Girkasse manuell
 Map: Kart med kartnål
 Market: Sofa
@@ -136,6 +143,7 @@ PhoneScratched: Smarttelefon med tre riper
 PhoneUsed: Smarttelefon med tre riper i glasset
 Pin: Kartnål
 PlaneTicket: Hånd med flybillett
+Play: Sirkel med en trekant som peker til høyre
 Playhouse: Klatrestativ
 Plus: Pluss
 ProductBlink: Rakett
@@ -174,6 +182,7 @@ Spa: Vannlilje
 Speedometer: Speedometer
 Stairs: Trappetrinn med diagonal pil opp
 StarCheck: Stjerne med fremhevet avkryssing
+Store: Butikk
 Stove: Koketopp med tre plater
 Suitcase: Stresskoffert
 Support: Person med hodesett
@@ -181,6 +190,7 @@ Swimming: Person som svømmer
 TV: Flatskjerm
 Tag: Merkelapp
 Theater: Kostymemaske med smilefjes
+ThreeSixty: Roterende pil til høyre med et hus
 TorgetBrowser: Nettleservindu med t-skjorte og fremhevet musepeker
 TorgetDelivery: Hånd som holder en liten eske
 TorgetHeadset: Hodetelefoner
@@ -190,6 +200,7 @@ TorgetShipping: Lastebil i fart
 TorgetShopping: Handlevogn
 TorgetUsers: Tre personer
 TorgetVerified: Nettleser med fremhevet skjold nederst til høyre
+TownHouse: To boligblokker
 Tractor: Traktor
 Triangle: Varseltrekant
 Twitter: Twitter logo
@@ -205,14 +216,3 @@ Wheelchair: Rullestol
 Wifi: WiFi symbol, tre bølger over en sirkel
 Woods: To grantrær
 Youtube: YouTube logo
-ThreeSixty: Roterende pil til høyre med et hus
-Play: Sirkel med en trekant
-History: Roterende pil til venstre med en klokke
-TownHouse: To boligblokker
-CabinHut: Hytte med hage
-Store: En butikk
-Mailbox: Postkasse med et flag som signaliserer ny post
-ChatRequest: Snakkeboble ved siden av en person
-CreditCard: To kreditkort
-ActiveAds: Ark med bilde og overskrift med fremhevet avkryssing
-Bank: En bank med tre søyler
