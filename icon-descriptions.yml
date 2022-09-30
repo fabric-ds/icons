@@ -1,5 +1,5 @@
 ---
-ActiveAds: Ark med bilde og overskrift med fremhevet avkryssing
+ActiveAds: Ark med bilde og overskrift med fremhevet hakemerke
 Ads: Ark med bilde og overskrift
 AirCon: Liten luftkjøler
 Airplane: Fly
@@ -16,7 +16,7 @@ Automatic: Girkasse automat
 BackWheelDrive: Bakhjuls drivverk
 Bag: Håndveske
 Bank: En bank med tre søyler
-BankIdent: Avkrysset skjold
+BankIdent: Skjold med hakemerke
 BatteryEmpty: Tomt batteri
 BatteryFull: Fullt batteri
 BatteryHalfFull: Halvfullt batteri
@@ -49,7 +49,7 @@ Charger: Kabel
 Charter: Koffert
 ChatRequest: Snakkeboble ved siden av en person
 ChatSupport: Snakkebobler med smilefjes
-Check: Avkrysset
+Check: Hakemerke
 Checklist: Sjekkliste
 Chevron-down: Pil ned
 Chevron-left: Pil venstre
@@ -63,6 +63,7 @@ Clock: Klokke
 Close: Kryss
 Cog: Tannhjul
 ColorPalette: Fargekart
+CottagePlot: Et stiplet kvadrat med en fremhevet hytte
 CreditCard: To kredittkort
 Cursor: Musepeker over en sirkel
 Dating: To hjerter
@@ -83,6 +84,7 @@ Expand: To diagonale piler pekende i hver sin retning
 EyeOff: Overstreket øye
 EyeOn: Øye
 Facebook: Facebook logo
+Farm: En låve med en silo ved siden av og to fugler på himmelen
 Favorite: Hjerte
 Feedback: Snakkebobler
 File: Ark med brettet kant i øvre høyre hjørne og en sirkel med plusstegn
@@ -145,6 +147,7 @@ Pin: Kartnål
 PlaneTicket: Hånd med flybillett
 Play: Sirkel med en trekant som peker til høyre
 Playhouse: Klatrestativ
+Plots: Stiplet kvadrat med et fremhevet mindre kvadrat
 Plus: Pluss
 ProductBlink: Rakett
 ProductBump: Bilde med tekst som fremheves av pil opp
@@ -181,7 +184,7 @@ Sorting: Tekstliste med pil ned på siden
 Spa: Vannlilje
 Speedometer: Speedometer
 Stairs: Trappetrinn med diagonal pil opp
-StarCheck: Stjerne med fremhevet avkryssing
+StarCheck: Stjerne med fremhevet hakemerke
 Store: Butikk
 Stove: Koketopp med tre plater
 Suitcase: Stresskoffert
@@ -209,13 +212,10 @@ Upload: Pil opp fra harddisk
 User: Person
 Users: To personer
 Van: Bobil
-Verification: Blått avkrysset skjold
+Verification: Blått skjold med hakemerke
 Wallet: Lommebok
-Warranty: Avkrysset rosett
+Warranty: Rosett med hakemerke
 Wheelchair: Rullestol
 Wifi: WiFi symbol, tre bølger over en sirkel
 Woods: To grantrær
 Youtube: YouTube logo
-Plots: Stiplet kvadrat med et fremhevet mindre kvadrat
-CottagePlot: Et stiplet kvadrat med en fremhevet hytte
-Farm: En låve med en silo ved siden av og to fugler på himmelen
