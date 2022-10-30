@@ -45,7 +45,7 @@
     "ora": "^6.1.2",
     "prompts": "^2.4.0",
     "rimraf": "^3.0.2",
-    "svgo": "^2.8.0"
+    "svgo": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
