@@ -19,19 +19,27 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "frameworks": "rimraf elements react vue && npm run build:frameworks",
-    "prepublishOnly": "rimraf dist && npm run build && npm run build:frameworks",
+    "vue": "rimraf vue && npm run build:vue",
+    "react": "rimraf react && npm run build:react",
+    "elements": "rimraf elements && npm run build:elements",
+    "prepublishOnly": "npx eik login && rimraf dist && npm run build && npm run vue && npm run react && npm run elements",
+    "build:vue": "mkdir vue && node ./generateVue.js && node ./vue.eik.js",
+    "build:react": "mkdir react && node ./generateReact.js && node ./react.eik.js",
+    "build:elements": "mkdir elements && node ./generateElements.js && node ./elements.eik.js",
     "import": "node ./scripts/import.js",
     "build": "node ./scripts/build.js",
-    "build:frameworks": "node ./scripts/output",
     "render": "node preview/render.js",
     "start": "npm run build && node preview/render.js && open ./preview/index.html",
-    "version": "npm publish",
+    "version": "npm publish && npx eik publish",
     "postversion": "git push --follow-tags",
     "update-lib": "npm run import && npm run build && npm run render && cp ./preview/index.html ./docs/index.html"
   },
   "license": "MIT",
   "devDependencies": {
+    "@eik/cli": "^2.0.22",
+    "@eik/esbuild-plugin": "^1.1.11",
+    "esbuild": "^0.14.42",
+    "jsdom": "^16.5.3",
     "@sindresorhus/slugify": "^2.1.0",
     "camelcase": "^7.0.0",
     "chalk": "^5.0.1",
@@ -61,7 +69,7 @@
     "import-map": [
       "https://assets.finn.no/map/react/v2",
       "https://assets.finn.no/map/vue/v1",
-      "https://assets.finn.no/map/custom-elements/v1"
+      "https://assets.finn.no/map/custom-elements/v2"
     ]
   }
 }
