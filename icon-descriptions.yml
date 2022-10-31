@@ -1,195 +1,221 @@
 ---
-ads: NONE
-air-con: NONE
-airplane: NONE
-airplane-hotel: NONE
-alert: NONE
-all-wheel-drive: NONE
-archway: NONE
-attachment: NONE
-automatic: NONE
-back-wheel-drive: NONE
-bag: NONE
-bank-ident: NONE
-beach: NONE
-bed: NONE
-bell: NONE
-bin: NONE
-boat-length: NONE
-bolt: NONE
-bookmark: NONE
-building: NONE
-bulb: NONE
-bulldozer: NONE
-burger: NONE
-bus: NONE
-cabin: NONE
-calculator: NONE
-calendar: NONE
-camera: NONE
-camping: NONE
-car: NONE
-car-key: NONE
-car-rent: NONE
-car-service: NONE
-car-subscription: NONE
-cart: NONE
-chainsaw: NONE
-charger: NONE
-charter: NONE
-chat-support: NONE
-check: NONE
-checklist: NONE
-chevron-double-left: NONE
-chevron-double-right: NONE
-chevron-down: NONE
-chevron-left: NONE
-chevron-right: NONE
-chevron-up: NONE
-circle-plus: NONE
-circle-user: NONE
-clock: NONE
-close: NONE
-cog: NONE
-color-palette: NONE
-cursor: NONE
-dating: NONE
-diner: NONE
-discount: NONE
-dislike: NONE
-door: NONE
-dots: NONE
-download: NONE
-drink: NONE
-economy: NONE
-edit: NONE
-energy: NONE
-engine: NONE
-engine-belt: NONE
-exchange: NONE
-eye-off: NONE
-eye-on: NONE
-facebook: NONE
-favorite: NONE
-feedback: NONE
-file: NONE
-filter: NONE
-fireplace: NONE
-fishing: NONE
-fitness: NONE
-front-wheel-drive: NONE
-gas-diesel: NONE
-gas-fuel: NONE
-gas-hybrid: NONE
-graph-line: NONE
-graph-pie: NONE
-grid: NONE
-grill: NONE
-hiking: NONE
-hotel: NONE
-house-modern: NONE
-house-person: NONE
-image: NONE
-info: NONE
-instagram: NONE
-job: NONE
-keys: NONE
-krone: NONE
-landscape: NONE
-laundry: NONE
-layers: NONE
-leaf: NONE
-lift: NONE
-like: NONE
-link: NONE
-link-external: NONE
-list: NONE
-lock-shield: NONE
-logout: NONE
-mail: NONE
-manual: NONE
-map: NONE
-market: NONE
-measure: NONE
-message: NONE
-messages: NONE
-minus: NONE
-motorcycle: NONE
-mountain: NONE
-nettbil: NONE
-new-ad: NONE
-no-smoking: NONE
-norwegian-motor: NONE
-paint-roller: NONE
-parking: NONE
-paw: NONE
-phone: NONE
-pin: NONE
-plane-ticket: NONE
-playhouse: NONE
-plus: NONE
-product-blink: NONE
-product-bump: NONE
-product-carousel: NONE
-product-highlight-listing: NONE
-product-nabolagsprofil: NONE
-product-no-ads: NONE
-product-starred: NONE
-product-top: NONE
-propeller: NONE
-question: NONE
-rating-empty: NONE
-rating-full: NONE
-rating-half: NONE
-real-estate: NONE
-room-service: NONE
-sailboat: NONE
-sailing: NONE
-sauna: NONE
-search: NONE
-search-favorites: NONE
-seat: NONE
-send: NONE
-service: NONE
-share: NONE
-shower: NONE
-smiley-good: NONE
-smiley-happy: NONE
-smiley-neutral: NONE
-smiley-sad: NONE
-sorting: NONE
-spa: NONE
-speedometer: NONE
-stairs: NONE
-star-check: NONE
-stove: NONE
-suitcase: NONE
-support: NONE
-swimming: NONE
-tag: NONE
-theater: NONE
-torget-browser: NONE
-torget-delivery: NONE
-torget-headset: NONE
-torget-lamp: NONE
-torget-mixer: NONE
-torget-shipping: NONE
-torget-shopping: NONE
-torget-users: NONE
-torget-verified: NONE
-tractor: NONE
-triangle: NONE
-tv: NONE
-twitter: NONE
-up: NONE
-upload: NONE
-user: NONE
-users: NONE
-van: NONE
-verification: NONE
-wallet: NONE
-warranty: NONE
-wheelchair: NONE
-wifi: NONE
-woods: NONE
-youtube: NONE
+ActiveAds: Ark med bilde og overskrift med fremhevet hakemerke
+Ads: Ark med bilde og overskrift
+AirCon: Liten luftkjøler
+Airplane: Fly
+AirplaneHotel: Fly og hotell
+Alert: Sirkel med utropstegn
+AlertError: Rød åttekant med hvitt utropstegn
+AlertInfo: Blå sirkel med bokstaven I
+AlertSuccess: Grønn sirkel med hakemerke
+AlertWarning: Gul varseltrekant med utropstegn
+AllWheelDrive:  Firehjuls drivverk
+Archway: Buegang
+Attachment: Binders
+Automatic: Girkasse automat
+BackWheelDrive: Bakhjuls drivverk
+Bag: Håndveske
+Bank: En bank med tre søyler
+BankIdent: Skjold med hakemerke
+BatteryEmpty: Tomt batteri
+BatteryFull: Fullt batteri
+BatteryHalfFull: Halvfullt batteri
+Beach: Strandparasoll
+Bed: Seng
+Bell: Bjelle
+Bin: Søppeldunk
+BoatLength: Båt med piler i begge retninger
+Bolt: Lyn
+Bookmark: Bokmerke
+Building: Boligblokk
+Bulb: Lyspære
+Bulldozer: Bulldoser
+Burger: Tre horisontale streker
+Bus: Buss
+Cabin: Feriehus
+CabinHut: Hytte med hage
+Calculator: Kalkulator
+Calendar: Kalender
+Camera: Kamera
+Camping: Campingvogn
+Car: Bil
+CarKey: Bil og nøkkel
+CarRent: Bil og klokke
+CarService: Bil og stjerne
+CarSubscription: Bil og sjekkliste
+Cart: Handlevogn
+Chainsaw: Motorsag
+Charger: Kabel
+Charter: Koffert
+ChatRequest: Snakkeboble ved siden av en person
+ChatSupport: Snakkebobler med smilefjes
+Check: Hakemerke
+Checklist: Sjekkliste
+Chevron-down: Pil ned
+Chevron-left: Pil venstre
+Chevron-right: Pil høyre
+Chevron-up: Pil opp
+ChevronDouble-left: Dobbel pil venstre
+ChevronDouble-right: Dobbel pil høyre
+CirclePlus: Sirkel med pluss
+CircleUser: Sirkel med ansikt
+Clock: Klokke
+Close: Kryss
+Cog: Tannhjul
+ColorPalette: Fargekart
+CottagePlot: Et stiplet kvadrat med en fremhevet hytte
+CreditCard: To kredittkort
+Cursor: Musepeker over en sirkel
+Dating: To hjerter
+Diner: Kniv og gaffel
+Discount: Prosenttegn
+Dislike: Tommel ned
+Door: Dør
+Dots: Tre prikker
+Download: Pil ned til harddisk
+Drink: Cocktail glass
+Economy: En seddel og to mynter
+Edit: Blyant
+Energy: Kabel med støpsel og planteblad
+Engine: Motor
+EngineBelt: Viftereim
+Exchange: Sirkel med to piler pekende i hver sin retning
+Expand: To diagonale piler pekende i hver sin retning
+EyeOff: Overstreket øye
+EyeOn: Øye
+Facebook: Facebook logo
+Farm: En låve med en silo ved siden av og to fugler på himmelen
+Favorite: Hjerte
+Feedback: Snakkebobler
+File: Ark med brettet kant i øvre høyre hjørne og en sirkel med plusstegn
+Filter: To horisontale skyveknapper over hverandre
+Fireplace: Peis
+Fishing: Fiskekrok
+Fitness: Treningsvekt
+FrontWheelDrive: Forhjuls drivverk
+GasDiesel: Dieselpumpe
+GasFuel: Bensinpumpe
+GasHybrid: Rundt støpsel med dråpe
+GraphLine: Linjegraf
+GraphPie: Kakediagram
+Grid: Fire kvadrater som danner et større kvadrat
+Grill: Kulegrill
+Hiking: Skogssti
+History: Roterende pil til venstre med en klokke
+Hotel: Hotell
+HouseCabin: Hytte
+HouseModern: Funkishus
+HousePerson: Hus med person
+Image: Ark med brettet kant i øvre høyre hjørne samt sol og fjell
+Info: Sirkel med bokstaven I
+Instagram: Instagram logo
+Job: Dokumentmappe
+Keys: To nøkler på nøkkelring
+Krone: Sirkel med KR
+Landscape: Sol og fjell
+Laundry: Vaskemaskin
+Layers: Tre kvadrater som flyter inn i hverandre
+Leaf: Planteblad
+Lift: Heis
+Like: Tommel opp
+Link: Lenke
+LinkExternal: Kvadrat med pil opp mot høyre
+List: To rektangler under hverandre
+LockShield: Skjold med hengelås
+Logout: Stående rektangel med pil ut til høyre
+Mail: Konvolutt
+Mailbox: Postkasse med et flagg som signaliserer ny post
+Manual: Girkasse manuell
+Map: Kart med kartnål
+Market: Sofa
+Measure: Stiplet kvadrat med målepiler
+Message: Snakkeboble
+Minus: Minus
+Motorcycle: Motorsykkel
+Mountain: Fjell med flagg på toppen
+Nettbil: To sirkler med en halvsirkel over
+NewAd: Ark med bilde, overskrift og fremhevet plusstegn
+NoSmoking: Overstreket sigarett
+NorwegianMotor: Sirkel med NBF
+PaintRoller: Malingsrulle i aksjon
+Parking: Sirkel med bokstaven P
+Paw: Kattepote
+Phone: Smarttelefon
+PhoneScratched: Smarttelefon med tre riper
+PhoneUsed: Smarttelefon med tre riper i glasset
+Pin: Kartnål
+PlaneTicket: Hånd med flybillett
+Play: Sirkel med en trekant som peker til høyre
+Playhouse: Klatrestativ
+Plots: Stiplet kvadrat med et fremhevet mindre kvadrat
+Plus: Pluss
+ProductBlink: Rakett
+ProductBump: Bilde med tekst som fremheves av pil opp
+ProductCarousel: Fremhevet stående rektangel med to rektangler i bakgrunnen
+ProductHighlightListing: Tekst med fremhevet bilde
+ProductNabolagsprofil: Hus med fremhevet kartnål
+ProductNoAds: Støyende megafon
+ProductStarred: Tre stjerner med tekst under
+ProductTop: Pil mot bilde med tekst under
+Propeller: Snurrende propell
+Question: Sirkel med spørsmålstegn
+Rating-empty: Tom blå stjerne
+Rating-full: Full blå stjerne
+Rating-half: Halvfull blå stjerne
+RealEstate: Hus med hage
+Refresh: Roterende pil
+RoomService: Hanskekledd hånd og serveringsbrett med kuppel
+Sailboat: To fugler og seilbåt på vannet
+Sailing: Seilbåt på vannet
+Sauna: Hus med varme
+ScrollUp: Pil opp
+Search: Forstørrelsesglass
+SearchFavorites: Forstørrelsesglass med hjerte
+Seat: Flysete
+Send: Papirfly
+Service: Roterende pil med skiftenøkkel
+Share: Kvadrat med pil ut til høyre
+Shower: Rennende dusjhode
+SmileyGood: Fornøyd smil
+SmileyHappy: Glad smilefjes
+SmileyNeutral: Uttrykksløst fjes
+SmileySad: Trist fjes
+Sorting: Tekstliste med pil ned på siden
+Spa: Vannlilje
+Speedometer: Speedometer
+Stairs: Trappetrinn med diagonal pil opp
+StarCheck: Stjerne med fremhevet hakemerke
+Store: Butikk
+Stove: Koketopp med tre plater
+Suitcase: Stresskoffert
+Support: Person med hodesett
+Swimming: Person som svømmer
+TV: Flatskjerm
+Tag: Merkelapp
+Theater: Kostymemaske med smilefjes
+ThreeSixty: Roterende pil til høyre med et hus
+TorgetBrowser: Nettleservindu med t-skjorte og fremhevet musepeker
+TorgetDelivery: Hånd som holder en liten eske
+TorgetHeadset: Hodetelefoner
+TorgetLamp: Gulvlampe
+TorgetMixer: Kjøkkenmaskin
+TorgetShipping: Lastebil i fart
+TorgetShopping: Handlevogn
+TorgetUsers: Tre personer
+TorgetVerified: Nettleser med fremhevet skjold nederst til høyre
+TownHouse: To boligblokker
+Tractor: Traktor
+Triangle: Varseltrekant
+Twitter: Twitter logo
+Up: Kvadrat med pil opp
+Upload: Pil opp fra harddisk
+User: Person
+Users: To personer
+Van: Bobil
+Verification: Blått skjold med hakemerke
+Wallet: Lommebok
+Warranty: Rosett med hakemerke
+Wheelchair: Rullestol
+Wifi: WiFi symbol, tre bølger over en sirkel
+Woods: To grantrær
+Youtube: YouTube logo
