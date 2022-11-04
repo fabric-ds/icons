@@ -17,18 +17,42 @@ const descriptions = yaml.load(descriptionsFile)
 const SRC_DIR = path.join(basedir, "raw");
 const DIST_DIR = path.join(basedir, "dist");
 
+// these are the only colors we will replace to currentColor
+const magicColors = ['#767676', '#0063fb', '#d91f0a', '#d5840b', '#059e6f', '#0386bf', '#6f7d90']
+const colorProps = [
+  'color',
+  'fill',
+  'stroke',
+  'stop-color',
+  'flood-color',
+  'lighting-color',
+];
+
 const svgoPlugins = [
   { name: 'preset-default',
     params: {
       overrides: {
-        convertColors: { currentColor: true },
         removeViewBox: false,
         removeTitle: false,
-        prefixIds: { delim: "", prefix: nanoid(5), },
       }
     }
   },
-  { name: 'sortAttrs' }
+  {
+    name: 'maybeConvertColors',
+    fn: (_root) => ({
+      element: {
+        enter: (node) => {
+          for (const [name, value] of Object.entries(node.attributes)) {
+            if (colorProps.includes(name) && magicColors.includes(value.toLowerCase())) {
+              node.attributes[name] = 'currentColor'
+            }
+          }
+        }
+      }
+    })
+  },
+  { name: 'sortAttrs' },
+  { name: 'prefixIds', params: { delim: "", prefix: nanoid(5), } }
 ]
 
 const files = glob.sync(`${SRC_DIR}/**/*.svg`);

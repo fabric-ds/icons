@@ -38,22 +38,22 @@
   "devDependencies": {
     "@eik/cli": "^2.0.22",
     "@eik/esbuild-plugin": "^1.1.11",
-    "esbuild": "^0.14.42",
-    "jsdom": "^16.5.3",
     "@sindresorhus/slugify": "^2.1.0",
     "camelcase": "^7.0.0",
     "chalk": "^5.0.1",
+    "esbuild": "^0.14.42",
     "fs-extra": "^10.1.0",
     "glob": "^8.0.3",
     "happy-dom": "^6.0.4",
     "js-yaml": "^4.1.0",
+    "jsdom": "^16.5.3",
     "nanoid": "^4.0.0",
     "node-fetch": "^3.2.9",
     "nunjucks": "^3.2.2",
     "ora": "^6.1.2",
     "prompts": "^2.4.0",
     "rimraf": "^3.0.2",
-    "svgo": "^2.8.0"
+    "svgo": "^3.0.0"
   },
   "publishConfig": {
     "access": "public"
