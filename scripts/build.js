@@ -18,7 +18,7 @@ const SRC_DIR = path.join(basedir, "raw");
 const DIST_DIR = path.join(basedir, "dist");
 
 // these are the only colors we will replace to currentColor
-const magicColors = ['#767676', '#0063fb', '#d91f0a', '#d5840b', '#059e6f', '#0386bf', '#6f7d90']
+const magicColors = ['#71717a', '#767676', '#0063fb', '#d91f0a', '#d5840b', '#059e6f', '#0386bf', '#6f7d90'].map(v => v.toLowerCase())
 const colorProps = [
   'color',
   'fill',
