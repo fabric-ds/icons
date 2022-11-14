@@ -79,8 +79,9 @@ files.forEach((filePath) => {
     const fileName = path.basename(filePath);
     const iconSize = getIconSize(filePath);
 
-    console.log(`\n${iconSize}/${fileName}:`);
-    printProfitInfo(prevFileSize, optimizedFileSize);
+    // Only enable when needed, this is too much garbage to be spitting at console - it hides useful messages
+    // console.log(`\n${iconSize}/${fileName}:`);
+    // printProfitInfo(prevFileSize, optimizedFileSize);
 
     const outputPath = path.join(DIST_DIR, iconSize, fileName);
 
