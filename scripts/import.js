@@ -165,6 +165,9 @@ async function fetchImageUrls(icons, figmaToken) {
   return json;
 }
 
+// This detects duplicate icons (e.g. two icons named the same thing in Figma)
+const seen = []
+
 /**
  * Get the SVG icon
  */
@@ -175,6 +178,9 @@ async function downloadSvgIcon({ iconName, url }) {
   // the icon name has the size of the icon included, which we don't want
 
   const { size, name } = sizeAndName(iconName);
+  const token = `${size}${name}`
+  if (seen.includes(token)) throw `DUPLICATE ICON ${token}`
+  seen.push(token)
 
   // this avoids downloading misnamed icons with no name
   // technically this makes the 'count' be off up above, but meh
