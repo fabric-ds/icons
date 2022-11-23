@@ -179,7 +179,7 @@ async function downloadSvgIcon({ iconName, url }) {
 
   const { size, name } = sizeAndName(iconName);
   const token = `${size}${name}`
-  if (seen.includes(token)) throw `DUPLICATE ICON ${token}`
+  if (seen.includes(token)) throw `--- DUPLICATE ICON DETECTED ${token}. Multiple icons are likely named ${name} and would overrite each other. This must be fixed in Figma. ---`
   seen.push(token)
 
   // this avoids downloading misnamed icons with no name
