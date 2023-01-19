@@ -12,16 +12,18 @@ getSVGs().forEach(({ svg, name, size, filename, exportName }) => {
   const attrs = Array.from(svg.attrs).map(attr => attr.name + `: ` + `'` + attr.value + `'`)
   const className = exportName
   const output = [
-    `import { LitElement, html } from 'lit';`,
-    `import { unsafeHTML } from 'lit/directives/unsafe-html.js';`,
-    `const icon = \`${svg.html}\`;`,
+    `import { LitElement, html, svg } from 'lit';`,
+    ``,
     `export class ${className} extends LitElement {`,
+    `  static _icon() {`,
+    `    return svg\`${svg.html}\`;`,
+    `  }`,
     `  get attrs() {`,
     `    const attrs = { ${attrs.join(', ')} };`,
     `    Array.from(this.attributes).forEach(({ nodeName, nodeValue }) => attrs[nodeName] = nodeValue);`,
     `    return Object.entries(attrs).map(([k, v]) => \`\${k}="\${v}"\`).join(' ');`,
     `  }`,
-    `  render() { return html\`\${unsafeHTML(\`<svg \${this.attrs}>\${icon}</svg>\`)}\`; }`,
+    `  render() { return html\`<svg \${this.attrs}>\${this.constructor._icon()}</svg>\`; }`,
     `}`,
     `if (!customElements.get('f-icon-${name}${size}', ${className})) {`,
     `  customElements.define('f-icon-${name}${size}', ${className});`,
