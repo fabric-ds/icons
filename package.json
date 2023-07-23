@@ -46,7 +46,7 @@
     "glob": "^8.0.3",
     "happy-dom": "^6.0.4",
     "js-yaml": "^4.1.0",
-    "jsdom": "^16.5.3",
+    "jsdom": "^22.0.0",
     "nanoid": "^4.0.0",
     "node-fetch": "^3.2.9",
     "nunjucks": "^3.2.2",
