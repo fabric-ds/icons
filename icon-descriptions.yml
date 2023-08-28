@@ -21,7 +21,8 @@ BatteryEmpty: Tomt batteri
 BatteryFull: Fullt batteri
 BatteryHalfFull: Halvfullt batteri
 Beach: Strandparasoll
-Bed: Seng
+HouseBed: Seng med et tak over
+DoubleBed: Dobbeltseng
 Bell: Bjelle
 Bin: Søppeldunk
 BoatLength: Båt med piler i begge retninger
@@ -140,10 +141,12 @@ NorwegianMotor: Sirkel med NBF
 PaintRoller: Malingsrulle i aksjon
 Parking: Sirkel med bokstaven P
 Paw: Kattepote
-Phone: Smarttelefon
+SmartPhone: Smarttelefon
+PhoneNew: Smarttelefon
 PhoneScratched: Smarttelefon med tre riper
 PhoneUsed: Smarttelefon med tre riper i glasset
-Pin: Kartnål
+PinMarker: Kartnål
+PinRound: Kartnål med en skygge under
 PlaneTicket: Hånd med flybillett
 Play: Sirkel med en trekant som peker til høyre
 Playhouse: Klatrestativ
