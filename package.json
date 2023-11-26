@@ -47,7 +47,7 @@
     "happy-dom": "^6.0.4",
     "js-yaml": "^4.1.0",
     "jsdom": "^16.5.3",
-    "nanoid": "^4.0.0",
+    "nanoid": "^5.0.0",
     "node-fetch": "^3.2.9",
     "nunjucks": "^3.2.2",
     "ora": "^6.1.2",
