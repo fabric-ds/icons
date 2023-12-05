@@ -39,7 +39,7 @@
     "@eik/cli": "^2.0.22",
     "@eik/esbuild-plugin": "^1.1.11",
     "@sindresorhus/slugify": "^2.1.0",
-    "camelcase": "^7.0.0",
+    "camelcase": "^8.0.0",
     "chalk": "^5.0.1",
     "esbuild": "^0.14.42",
     "fs-extra": "^10.1.0",
