@@ -36,7 +36,7 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@eik/cli": "^2.0.22",
+    "@eik/cli": "^3.0.0",
     "@eik/esbuild-plugin": "^1.1.11",
     "@sindresorhus/slugify": "^2.1.0",
     "camelcase": "^7.0.0",
